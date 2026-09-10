@@ -11,3 +11,18 @@
 .logos .logo-nlhpc{max-height:94px;max-width:78%}
 .logos .logo-aerth{max-height:78px;max-width:72%}
 @media(max-width:760px){.logos div{height:130px;padding:22px}.logos .logo-uba{max-height:76px}}
+
+.orb {
+  pointer-events: none;
+}
+
+.actions {
+  position: relative;
+  z-index: 2;
+}
+
+.actions a {
+  position: relative;
+  z-index: 3;
+  touch-action: manipulation;
+}
