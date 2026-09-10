@@ -12,17 +12,20 @@
 .logos .logo-aerth{max-height:78px;max-width:72%}
 @media(max-width:760px){.logos div{height:130px;padding:22px}.logos .logo-uba{max-height:76px}}
 
-.orb {
-  pointer-events: none;
+.orb,
+.hero::before,
+.hero::after {
+    pointer-events: none !important;
 }
 
 .actions {
-  position: relative;
-  z-index: 2;
+    position: relative !important;
+    z-index: 999 !important;
 }
 
 .actions a {
-  position: relative;
-  z-index: 3;
-  touch-action: manipulation;
+    position: relative !important;
+    z-index: 1000 !important;
+    pointer-events: auto !important;
+    touch-action: manipulation;
 }
