@@ -12,30 +12,14 @@
 .logos .logo-aerth{max-height:78px;max-width:72%}
 @media(max-width:760px){.logos div{height:130px;padding:22px}.logos .logo-uba{max-height:76px}}
 
-.orb,
-.hero::before,
-.hero::after {
-    pointer-events: none !important;
-}
-
-.actions {
-    position: relative !important;
-    z-index: 999 !important;
-}
-
-
-
-.actions a {
-    position: relative !important;
-    z-index: 1000 !important;
-    pointer-events: auto !important;
-    touch-action: manipulation;
-
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 48px;
-    padding: 12px 20px !important;
-    cursor: pointer;
-}
+/* V3 — mobile-safe hero, visible Aerthydral mark and contact */
+.orb{pointer-events:none}
+.aerth-wordmark{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Manrope,Arial,sans-serif;color:#102329;line-height:1}
+.aerth-wordmark span{font-size:clamp(17px,1.7vw,27px);font-weight:700;letter-spacing:.12em}
+.aerth-wordmark small{margin-top:8px;font-size:10px;font-weight:600;letter-spacing:.34em;color:#43818c}
+.contact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:900px;margin-top:55px}
+.contact>div{border-top:1px solid #a9bfbc;padding-top:18px;display:flex;flex-direction:column;gap:9px}
+.contact span{font-size:11px;text-transform:uppercase;letter-spacing:2px;font-weight:600;color:#43818c}
+.contact a{color:#0d3038;text-decoration:none;font:600 clamp(16px,2vw,21px) Manrope,Arial,sans-serif;overflow-wrap:anywhere}
+.contact a:hover{text-decoration:underline}
+@media(max-width:760px){.contact{grid-template-columns:1fr;margin-top:38px}.hero{min-height:78vh}.logos .aerth-wordmark span{font-size:15px}.logos .aerth-wordmark small{font-size:8px;letter-spacing:.22em}}
